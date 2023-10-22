@@ -10,9 +10,9 @@ public class Bala : MonoBehaviour
         transform.Translate(Vector3.forward * velocidad * Time.deltaTime);
     }
 
-	private void OnCollisionEnter(Collision collision)
+	private void OnTriggerEnter(Collider o)
 	{
-		if (collision.collider.CompareTag("Player"))
+		if (o.CompareTag("Player"))
 		{
 			Destroy(gameObject);
 		}
