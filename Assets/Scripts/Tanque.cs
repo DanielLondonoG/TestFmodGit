@@ -19,7 +19,7 @@ public class Tanque : MonoBehaviour
 
 	void Update()
     {
-        rb.velocity = (velocidad * Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical"));
+        rb.velocity = (velocidad * Vector3.forward * Time.deltaTime * Input.GetAxis("Vertical") + rb.velocity.y*Vector3.up);
         transform.Rotate(0, velRotacion * Time.deltaTime * Input.GetAxis("Horizontal"), 0);
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
