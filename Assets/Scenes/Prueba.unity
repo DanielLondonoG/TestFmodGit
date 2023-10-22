@@ -248,6 +248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 20
   velRotacion: 180
+  cannon: {fileID: 1437764681}
+  disparo: {fileID: 4574146924476607175, guid: 53f78e17b9d752e459f258e7585e1e46, type: 3}
 --- !u!65 &558549999
 BoxCollider:
   m_ObjectHideFlags: 0
